@@ -1,0 +1,64 @@
+<div data-role="page" id="contactForm">
+
+      <div data-role="header" data-theme="b" data-position="inline">
+        <a href="contacts.html" data-icon="delete">Cancel</a>
+        <h1>Add Contact</h1>
+        <a onclick="return saveContact();" href="#" data-icon="check" data-theme="b">Save</a>
+      </div>
+      <div data-role="content">
+
+        <form name ='formContact' action="contactForm.html" id="formContact" method="post">
+          <input id='contactId' type="hidden" name="id" value="0"/>
+          <table>
+            <tr>
+              <td>Display Name</td>
+              <td><input type="text" name="displayName" id='nameDisplay' value="" /></td>
+            </tr>
+            <tr>
+              <td>First Name</td>
+              <td><input type="text" name="firstName" id='firstName' value="" /></td>
+            </tr>
+            <tr>
+              <td>Last Name</td>
+              <td><input type="text" name="lastName" id='lastName' value="" /></td>
+            </tr>
+            <tr>
+              <td>Email (Home)</td>
+              <td><input type="text" name="email_home" id='emailHome' value="" /></td>
+            </tr>
+            <tr>
+              <td>Email (Work)</td>
+              <td><input type="text" name="email_work" id='emailWork' value="" /></td>
+            </tr>
+            <tr>
+              <td>Email (Other)</td>
+              <td><input type="text" name="email_other" id='emailOther' value="" /></td>
+            </tr>
+            <tr>
+              <td>Phone (Home)</td>
+              <td><input type="text" name="phone_home" id='phoneHome' value="" /></td>
+            </tr>
+            <tr>
+              <td>Phone (Work)</td>
+              <td><input type="text" name="phone_work" id='phoneWork' value="" /></td>
+            </tr>
+            <tr>
+              <td>Phone (Other)</td>
+              <td><input type="text" name="phone_other" id='phoneOther' value="" /></td>
+            </tr>
+          </table>
+        </form>
+
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b">
+ <div data-role="navbar" data-iconpos="left">
+        <ul>
+            <li><a href="page2.html" data-icon="grid" data-theme="c" >Home</a></li>
+            <li><a href="takePic.html" data-icon="grid" data-theme="e">Take A Picture</a></li>
+            <li><a href="contacts.html" data-icon="grid" data-theme="c">Contacts</a></li>
+            <li><a href="#" data-icon="grid" data-theme="e">About Us</a></li>
+            <li><a href="productSearch.html" data-icon="grid" data-theme="c">Product Search</a></li>
+        </ul>
+    </div>
+      </div>
+    </div>

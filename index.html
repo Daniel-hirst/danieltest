@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.3.2.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.mobile-1.3.2.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/prodSearch.js"></script>
+    <script src="js/takePicture.js"></script>
+    <script src="js/contacts.js"></script>
+    <script type="text/javascript">
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+
+
+    alert ('device=' + device.model + "  " + device.platform + "  " + device.version);
+
+    
+}
+
+    </script>
+  </head>
+  <body>
+    <div data-role="page" id="indexPage" data-theme="a">
+
+      <div data-role="header" data-theme="b">
+        <h1>Drive Computing</h1>
+
+      </div>
+      <div data-role="content">
+
+        <form class="login" id="formLogin" name='formLogin'>
+
+        <input type="text" name="enterId" id="enterId" class="login-input" placeholder="Username" autofocus>
+        <input type="password" name="enterPass" id="enterPass" class="login-input" placeholder="Password">
+        <input type="button" value="Login" id="loginButton" onclick='doLogin();'>
+
+</form>
+
+
+     <label for="url">URL Input</label>
+     <input name="url" id="urlval" value="" type="text">
+
+     <a  data-role="button" data-icon="save" data-iconpos="left" data-inline="true" onClick="doSave();">Save</a>
+
+      </div>
+
+    </div>
+
+    <script src="phonegap.js"></script>
+  </body>
+</html>
